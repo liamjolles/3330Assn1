@@ -1,5 +1,7 @@
 package Proj;
 
+// Stores tickets in a fixed size array and creates them internally
+// Only handles storage and lookup, not overall logic
 public class TicketBook {
 
 	private Ticket[] tickets;
