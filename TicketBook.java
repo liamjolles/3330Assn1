@@ -31,7 +31,7 @@ public Ticket findById(int id) {
 	}
 	return null;
 }
-public void printALL() {
+public void printAll() {
 	for (int i = 0; i < count; i++) {
 		System.out.println(tickets[i]);
 	}
