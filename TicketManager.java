@@ -1,4 +1,4 @@
-package proj;
+package Proj;
 
 public class TicketManager {
     private final TicketBook book;
@@ -12,7 +12,8 @@ public class TicketManager {
     public int createTicket(Event event, TicketType type, String studentName) {
         int id = nextId;
         book.createTicket(id, event, type, studentName);
-        nextId++;        return id;
+        nextId++;        
+        return id;
     }
 
     public boolean cancelTicket(int id) {
