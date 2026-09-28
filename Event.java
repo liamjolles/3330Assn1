@@ -1,5 +1,7 @@
 package Proj;
 
+// Represents one campus event
+// Immutable, name and location can't change after creation
 public class Event {
 	
 	private final String name;
@@ -29,7 +31,7 @@ public class Event {
 		
 	public String getLocation()
 	{
-			return location;
+		return location;
 	}
 	
 	public String toString()
