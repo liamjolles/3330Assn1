@@ -1,4 +1,4 @@
-package Proj;
+package proj;
 
 public class TicketBook {
 	
@@ -43,3 +43,7 @@ public void printForEvent(Event event) {
 			System.out.println(tickets[i]);
 		}
 	}
+}
+	
+ 
+}
