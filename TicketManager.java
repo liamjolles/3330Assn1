@@ -1,5 +1,7 @@
 package Proj;
 
+// Coordinates the system: generates ticket IDs and has the Ticket class delegate cancel/admit
+// TicketBook does the storage
 public class TicketManager {
     private final TicketBook book;
     private int nextId;
