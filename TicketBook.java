@@ -16,7 +16,7 @@ public TicketBook(int capacity) {
 public void createTicket(int id, Event event, TicketType type, String studentName) {
 	
 	if(count >= tickets.length) {
-		throw new IllegalStateException("Ticket book is full");
+		throw new IllegalArgumentException("Ticket book is full");
 	}
 	Ticket ticket = new Ticket(id, event, type, studentName);
 	tickets[count] = ticket;
@@ -39,12 +39,7 @@ public void printAll() {
 }
 public void printForEvent(Event event) {
 	for (int i = 0; i < count; i++) {
-		if(tickets[i].getEvent() == event) {
+		if(tickets[i].isForEvent(event)) {
 			System.out.println(tickets[i]);
 		}
 	}
-}
-	
- 
-}
-
