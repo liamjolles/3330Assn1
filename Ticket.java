@@ -1,5 +1,8 @@
 package Proj;
 
+// One ticket issued to one student for one event
+// A ticket can only change state while it's active (not already canceled, not already admitted)
+
 public class Ticket {
     private final int id;
     private final Event event;
@@ -29,6 +32,8 @@ public class Ticket {
         this.admitted = false;
     }
 
+    
+ // Only an active ticket can be canceled. Already canceled or admitted returns false.
     public boolean cancel() {
         if (!isActive()) {
             return false;
@@ -37,6 +42,7 @@ public class Ticket {
         return true;
     }
 
+ // Only an active ticket can be admitted
     public boolean admit() {
         if (!isActive()) {
             return false;
