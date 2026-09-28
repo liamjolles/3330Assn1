@@ -1,5 +1,7 @@
 package Proj;
 
+// Represents a type of ticket (e.g. Student, VIP) and its price.
+// Immutable
 public class TicketType {
 	private final String name;
 	private final double price;
@@ -31,8 +33,8 @@ public class TicketType {
 		return price;
 	}
 	
+	
 	public String toString() {
 		return name + " ($" + String.format("%.2f", price) + ")";
 	}
 }
-
