@@ -1,3 +1,5 @@
+package proj;
+
 public class Ticket {
     private final int id;
     private final Event event;
