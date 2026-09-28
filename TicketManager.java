@@ -1,3 +1,5 @@
+package proj;
+
 public class TicketManager {
     private final TicketBook book;
     private int nextId;
